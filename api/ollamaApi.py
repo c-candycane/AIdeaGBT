@@ -32,6 +32,7 @@ def chat_vision():
     print(f'Received chatHistory: {chat_history}')
 
     chat_history = format_chat_history(chat_history)
+
     return Response(
         stream_with_context(
             generate_by_chat(
