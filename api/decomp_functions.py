@@ -5,8 +5,8 @@ from io import BytesIO
 import pymupdf
 
 
-def format_chat_history(chatHistory):
-    chatHistory = read_image(chatHistory)
+def format_chat_history(chat_history):
+    chatHistory = read_image(chat_history)
     read_pdf2(chatHistory)
     return chatHistory
 
